@@ -12,13 +12,9 @@ export default function Home() {
     console.log(darkMode)
   }
   return (
-    <div className="root">
-      <div className={`h-screen ${darkMode ? 'dark' : ''}`}>
-        <div className=" mx-auto lg:px-80 px-10 dark:bg-neutral-900 dark:text-neutral-300 h-full w-full">
-          <NavBar toggleDarkMode={toggleDarkMode} />
-          <AboutMe />
-        </div>
-      </div>
+    <div className="root lg:h-screen">
+      <AboutMe />
+    
     </div>
   );
 }

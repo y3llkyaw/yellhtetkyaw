@@ -1,4 +1,7 @@
 "use client";
+
+import Link from "next/link";
+
 function NavBar({ toggleDarkMode }) {
 
     return (<nav className="mx-auto pt-12 ">
@@ -9,14 +12,16 @@ function NavBar({ toggleDarkMode }) {
                     <ul
                         className="md:flex md:float-left text-center md:mt-0 mt-6 transition ease-in-out hidden">
                         <li className="nav-item md:pr-4">
-                            <span
-                                className="font-mono text-red-500 text-sm hover:underline cursor-pointer">
-                                Home</span>
+                            <Link href="/" >
+                                <span
+                                    className="font-mono text-red-500 text-sm hover:underline cursor-pointer">
+                                    Home</span> </Link>
                         </li>
                         <li className="nav-item md:pr-4">
-                            <span
-                                className="font-mono text-red-500 text-sm hover:underline cursor-pointer">
-                                Projects</span>
+                            <Link href="/projects" >
+                                <span
+                                    className="font-mono text-red-500 text-sm hover:underline cursor-pointer">
+                                    Projects</span> </Link>
                         </li>
                     </ul>
                 </div>
